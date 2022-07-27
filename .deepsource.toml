@@ -6,3 +6,7 @@ enabled = true
 
   [analyzers.meta]
   import_root = "github.com/inspectsource/demo-go"
+  
+[[analyzers]]
+name = "@sourya/todo-checker"
+enabled = true
