@@ -6,3 +6,11 @@ enabled = true
 
   [analyzers.meta]
   import_root = "github.com/inspectsource/demo-go"
+
+[[analyzers]]
+name = "test-coverage"
+enabled = true
+
+[[transformers]]
+name = "gofmt"
+enabled = true
