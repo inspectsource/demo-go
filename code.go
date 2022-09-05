@@ -9,11 +9,11 @@ import (
 )
 
 type GenericInterface interface {
-	DeliversTo(string) bool
+DeliversTo(string) bool
 }
 
 type Address struct {
-	City       string `json:"city"`
+City       string `json:"city"`
 	PostalCode string `json:"postal_code"`
 	FirstLine  string `json:"first_line"`
 	SecondLine string `json:"second_line"`
