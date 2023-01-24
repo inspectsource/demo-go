@@ -14,6 +14,10 @@ func connect() {
 	defer l.Close()
 }
 
+func x() {
+	fmt.Println("Hello")
+}
+
 func sshConfigure() {
 	_ = ssh.InsecureIgnoreHostKey()
 }
