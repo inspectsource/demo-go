@@ -21,6 +21,7 @@ type Address struct {
 
 type S struct {
 	Name string
+	Type string
 }
 
 type Seller struct {
