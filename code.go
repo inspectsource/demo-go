@@ -23,6 +23,7 @@ type S struct {
 	Name string
 	Type string
 	X    int
+	Y    int
 }
 
 type Seller struct {
