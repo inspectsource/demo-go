@@ -16,7 +16,7 @@ func connect() {
 }
 
 func x() {
-	fmt.Println("Hello")
+	fmt.Println("Hello there")
 }
 
 func sshConfigure() {
