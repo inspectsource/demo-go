@@ -19,6 +19,10 @@ type Address struct {
 	SecondLine string `json:"second_line"`
 }
 
+type S struct {
+	Name string
+}
+
 type Seller struct {
 	Name       string  `json:"name"`
 	Address    Address `json:"address"`
