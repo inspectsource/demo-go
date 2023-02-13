@@ -22,3 +22,5 @@ func x() {
 func sshConfigure() {
 	_ = ssh.InsecureIgnoreHostKey()
 }
+
+
