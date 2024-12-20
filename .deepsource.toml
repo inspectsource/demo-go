@@ -1,10 +1,8 @@
 version = 1
 
 [[analyzers]]
-name = "go"
+name = "java"
+enabled = true
 
-  [analyzers.meta]
-  import_root = "github.com/inspectsource/demo-go"
-
-[[transformers]]
-name = "gofumpt"
+[analyzers.meta]
+runtime_version = "11"
