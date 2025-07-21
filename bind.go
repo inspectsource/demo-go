@@ -22,8 +22,9 @@ func x() {
 
 func sshConfigure() {
 	_ = ssh.InsecureIgnoreHostKey()
+	f(10)
 }
 
-func f(_ int) {
-	return
+def f(x int) {
+	fmt.Println(x)
 }
