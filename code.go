@@ -140,7 +140,7 @@ func WriteProducts(productsSold []Product, productsLeft []Product, jsonPath stri
 		allProducts = append(allProducts, product)
 	}
 
-	for i, _ := range productsLeft {
+	for i := range productsLeft {
 		productsLeft = append(allProducts, productsLeft[i])
 	}
 
@@ -165,4 +165,8 @@ func traverseProducts() {
 			fmt.Println(product, "indexed as", productIndex)
 		}
 	}
+}
+
+func f(_ int) {
+	return
 }
