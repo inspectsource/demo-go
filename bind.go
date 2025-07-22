@@ -1,10 +1,11 @@
 package main
 
 import (
-	"golang.org/x/crypto/ssh"
+	"fmt"
 	"log"
 	"net"
-	"fmt"
+
+	"golang.org/x/crypto/ssh"
 )
 
 func connect() {
@@ -23,4 +24,14 @@ func sshConfigure() {
 	_ = ssh.InsecureIgnoreHostKey()
 }
 
+func f(x int) {
+	return
+}
 
+func h() {
+	return
+}
+
+func g() {
+	return
+}
