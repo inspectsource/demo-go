@@ -166,3 +166,7 @@ func traverseProducts() {
 		}
 	}
 }
+
+func f(x int) {
+	return
+}
