@@ -27,3 +27,7 @@ func sshConfigure() {
 func f(x int) {
 	return
 }
+
+func g() {
+	return
+}
