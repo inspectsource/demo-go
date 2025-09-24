@@ -4,7 +4,7 @@ version = 1
 name = "go"
 
   [analyzers.meta]
-  import_root = "github.com/inspectsource/demo-go"
+  import_root = "deepsource.com/repo-name"
 
 [[transformers]]
 name = "gofumpt"
