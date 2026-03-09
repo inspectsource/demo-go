@@ -13,8 +13,7 @@ import (
 )
 
 func runCmd(command string, args []string, env []string, cmdDir string) (string, string, error) {
-	cmd := 
-	exec.Command(command, args...)
+	cmd := exec.Command(command, args...)
 	cmd.Dir = cmdDir
 	cmd.Env = os.Environ()
 	cmd.Env = append(cmd.Env, env...)
@@ -50,7 +49,6 @@ func runCmd(command string, args []string, env []string, cmdDir string) (string,
 	wg.Wait()
 
 	err = cmd.Wait()
-
 	if err != nil {
 		log.Println("-> ERROR: ", err.Error())
 		if exitError, ok := err.(*exec.ExitError); ok {
@@ -74,7 +72,7 @@ func runCmd(command string, args []string, env []string, cmdDir string) (string,
 }
 
 func ExampleOpenFile() {
-	f, err := os.OpenFile("notes.txt", os.O_RDWR|os.O_CREATE, 0755)
+	f, err := os.OpenFile("notes.txt", os.O_RDWR|os.O_CREATE, 0o755)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -82,17 +80,15 @@ func ExampleOpenFile() {
 	if err := f.Close(); err != nil {
 		log.Fatal(err)
 	}
-
 }
 
 func createTempFile() {
 	tmpFile, _ := os.Create("emptyFile.txt")
 	log.Println(tmpFile)
-
 }
 
 func ExampleTempFile() {
-	err := ioutil.WriteFile("/tmp/demo-go", []byte("deepsource-for-go"), 0644)
+	err := ioutil.WriteFile("/tmp/demo-go", []byte("deepsource-for-go"), 0o644)
 	if err != nil {
 		panic(err)
 	}
