@@ -1,11 +1,12 @@
 package main
 
 import (
-	"golang.org/x/crypto/ssh"
+	"fmt"
 	"log"
 	"net"
 	"net/http"
-	"fmt"
+
+	"golang.org/x/crypto/ssh"
 )
 
 func connect() {
@@ -52,4 +53,3 @@ func sshPasswordAuth() {
 	}
 	fmt.Println(config)
 }
-
